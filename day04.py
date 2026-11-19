@@ -32,5 +32,7 @@ for message in messages:
         print("Category: General")
 
     print("----- Count:", count)
+    print("-----------------------")
+    
+print("Total Messages Processed:", count)
 
-print("-----Total Count:", count)
