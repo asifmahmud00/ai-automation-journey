@@ -5,7 +5,9 @@ messages = [
     "Thank you for your service",
     "Where is my delivery?",
     "I want a refund",
-    "I have a Complain"
+    "I have a Complaint",
+    "I want to complain",
+    "Your service is bad"
 ]
 
 print("CUSTOMER MESSAGE REPORT")
@@ -26,13 +28,16 @@ for message in messages:
         print("Category: Delivery")
     elif "refund" in message.lower():
         print("Category: Refund")
-    elif "complain" in message.lower():
+    elif ("complain" in message.lower() 
+        or "complaint" in message.lower()
+        or "bad" in message.lower()):
         print("Category: Complain")
+        
     else:
         print("Category: General")
 
     print("----- Count:", count)
     print("-----------------------")
-    
+
 print("Total Messages Processed:", count)
 
